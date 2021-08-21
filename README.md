@@ -1,6 +1,18 @@
 # Arduino Distance Tracker 
 
-The goal of this project is to create a distance tracker that displays how far away an object is from the sensor using 2 RGB LEDs.
+The goal of this project is to create a distance tracker that displays how far away an object is from the sensor using 2 RGB LEDs. Based on the code in the **main.cpp** file the lights will turn the following colors:
+
+|Distance (x)|RGB LED #1|RGB LED #2|
+|:------------:|:------------:|:------------:|
+|2cm < x <= 52cm|red|red|
+|52cm < x <= 102cm|red|off|
+|102cm < x <= 152cm|blue|off|
+|152cm < x <= 202cm|blue|blue|
+|202cm < x <= 252cm|green|off|
+|252cm < x <= 302cm|green|green|
+|302cm < x <= 352cm|white|off|
+|352cm < x <= 400cm|white|white|
+|400cm < x|off|off|
 
 ## 1.0 THE CIRCUIT
 ### 1.1 Components

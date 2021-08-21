@@ -142,20 +142,20 @@ void loop()
   else if (distance > t2 && distance <= t3)
   {
     setAllColors(false, false, false);
-    digitalWrite(GREEN1, HIGH);
+    digitalWrite(BLUE1, HIGH);
   }
   else if (distance > t3 && distance <= t4)
   {
-    setAllColors(false, true, false);
+    setAllColors(false, false, true);
   }
   else if (distance > t4 && distance <= t5)
   {
     setAllColors(false, false, false);
-    digitalWrite(BLUE1, HIGH);
+    digitalWrite(GREEN1, HIGH);
   }
   else if (distance > t5 && distance <= t6)
   {
-    setAllColors(false, false, true);
+    setAllColors(false, true, false);
   }
   else if (distance > t6 && distance <= t7)
   {
